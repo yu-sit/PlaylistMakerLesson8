@@ -37,7 +37,10 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
+    val core_version = "1.13.1"
+
+    implementation("androidx.core:core:$core_version")
+    implementation("androidx.core:core-ktx:$core_version")
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
