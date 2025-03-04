@@ -13,9 +13,8 @@ class LibraryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_library)
 
-        val back = findViewById<ImageView>(R.id.toolbar_back)
-        back.setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
-        }
+        val imageBack = findViewById<ImageView>(R.id.backToMainActivity)
+        imageBack.setOnClickListener{finish()}
+
     }
 }

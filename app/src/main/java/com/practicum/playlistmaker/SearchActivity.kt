@@ -12,7 +12,7 @@ class SearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-        val back = findViewById<ImageView>(R.id.toolbar_back)
+        val back = findViewById<ImageView>(R.id.backToMainActivity)
         back.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }

@@ -18,7 +18,7 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <ImageView
-            android:id="@+id/toolbar_back"
+            android:id="@+id/backToMainActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size_16"
@@ -33,3 +33,5 @@
             android:textSize="@dimen/text_size_22" />
     </androidx.appcompat.widget.Toolbar>
 </LinearLayout>
+
+

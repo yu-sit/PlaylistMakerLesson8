@@ -11,7 +11,7 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val back = findViewById<ImageView>(R.id.toolbar_back)
+        val back = findViewById<ImageView>(R.id.backToMainActivity)
         back.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }

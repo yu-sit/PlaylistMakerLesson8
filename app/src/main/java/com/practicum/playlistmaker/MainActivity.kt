@@ -8,26 +8,12 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
-// далее реализация анонимного класса
-/*        val title = findViewById<TextView>(R.id.toolbar_main)
-        val titleClickListener: View.OnClickListener = object : View.OnClickListener { override fun onClick(v: View?) {
-            Toast.makeText(this@MainActivity, getString(R.string.app_name), Toast.LENGTH_SHORT).show()
-        } }
-        title.setOnClickListener(titleClickListener)
-*/
-// далее реализация лямбда-выражения
         val search = findViewById<Button>(R.id.search)
-/*        search.setOnClickListener {
-            Toast.makeText(this@MainActivity, getString(R.string.menu_search), Toast.LENGTH_SHORT).show()
-        }
-*/
         search.setOnClickListener(this@MainActivity)
         val media = findViewById<Button>(R.id.library)
         media.setOnClickListener(this@MainActivity)
@@ -54,6 +40,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
